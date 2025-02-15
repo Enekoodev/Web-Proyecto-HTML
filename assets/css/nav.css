@@ -77,10 +77,15 @@ nav a:hover {
 
 footer {
   padding: 20px;
-  background: #000;
+  background: #131313;
   border-top: 3px solid #0f0;
-  font-size: 14px;
   text-align: center;
+}
+
+footer p {
+  font-size: 14px;
+  color: white;
+  margin-bottom: 3%;
 }
 
 /* Controla per a movils */
