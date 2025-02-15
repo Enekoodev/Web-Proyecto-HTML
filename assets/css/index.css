@@ -7,16 +7,21 @@
     background-size: cover;
     background-position: center;
     border-bottom: 3px solid #0f0;
+    flex-wrap: wrap;
+    text-align: center;
 }
 
 .inicio-content {
     max-width: 600px;
+    flex: 1;
+    min-width: 300px;
 }
 
 .inicio h3 {
     color: #0f0;
     font-size: 70px;
     text-transform: uppercase;
+    margin-bottom: 20px;
 }
 
 .info-content {
@@ -42,41 +47,29 @@
     margin-bottom: 20px;
 }
 
-.galeria .imagenes {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    width: 90%;
-    max-width: 1000px;
+.tabla-juegos {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-.galeria ul {
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
-
-.galeria li {
-    list-style: none;
+.tabla-juegos table {
+    width: 100%;
+    border-collapse: collapse;
     border-radius: 10px;
 }
 
-.galeria img {
+.tabla-juegos td {
+    padding: 10px;
+    border: 3px solid #0f0;
+}
+
+.tabla-juegos img {
     width: 100%;
     height: auto;
-    max-height: 250px;
-    object-fit: cover;
-    border: 3px solid #0f0;
-    border-radius: 10px;
+    max-height: 200px;
+    border-radius: 5px;
 }
-
-.galeria img:hover {
-    transform: scale(1.05);
-}
-
 
 .resenas {
     padding: 50px;
