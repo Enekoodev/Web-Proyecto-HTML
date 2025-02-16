@@ -1,0 +1,198 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Pixelify Sans', sans-serif;
+    box-sizing: border-box;
+    background-color: black;
+    display: flex;
+    width: 100vw;
+    height: 98vh;
+    justify-content: center;
+    place-items: center;
+}
+.paginaComo{
+    width: 35vw;
+    height: 84vh;
+    border: 7px solid white;
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+}
+div h1{
+    font-size: 3.5em;
+    margin-top: 30px;
+}
+.c, .j{
+    color: #E7484F
+}
+.o, .u{
+    color: #F68B1D
+}
+.m, .g{
+    color: #FCED00
+}
+.o2, .a{
+    color: #009E4F
+}
+.j, .r{
+    color: #00AAC3
+}
+.u{
+    color:  #732982
+}
+.vacio{
+    color: none;
+}
+p{
+    color:white;
+     margin-left: 60px;
+     margin-right: 50px;
+     font-size: 1.3em;
+     line-height: 35px;
+     margin-top: -20px;
+}
+img{
+    width: 70px;
+}
+.volver{
+    margin-right: -120px;
+}
+@media (max-width: 1500px){
+    div h1{
+        font-size: 3.5em;
+    }
+    .paginaComo{
+        width: 40vw;
+        height: 84vh;
+    }
+    p{
+        font-size: 1.5em;
+    }
+    img{
+        width: 70px;
+    }
+} 
+@media (max-width: 1400px){
+    div h1{
+        font-size: 3.5em;
+    }
+    .paginaComo{
+        width: 45vw;
+        height: 84vh;
+    }
+    p{
+        font-size: 1.5em;
+    }
+    img{
+        width: 70px;
+    }
+} 
+@media (max-width: 1200px){
+    div h1{
+        font-size: 3.5em;
+    }
+    .paginaComo{
+        width: 55vw;
+        height: 84vh;
+    }
+    p{
+        font-size: 1.5em;
+    }
+    img{
+        width: 70px;
+    }
+} 
+@media (max-width: 1000px){
+    div h1{
+        font-size: 3.5em;
+    }
+    .paginaComo{
+        width: 55vw;
+        height: 84vh;
+    }
+    p{
+        font-size: 1.4em;
+    }
+    img{
+        width: 70px;
+    }
+} 
+@media (max-width: 900px){
+    div h1{
+        font-size: 3em;
+    }
+    .paginaComo{
+        width: 55vw;
+        height: 84vh;
+    }
+    p{
+        font-size: 1.3em;
+    }
+    img{
+        width: 50px;
+    }
+} 
+@media (max-width: 800px){
+    div h1{
+        font-size: 2.5em;
+    }
+    .paginaComo{
+        width: 60vw;
+        height: 84vh;
+    }
+    p{
+        font-size: 1.3em;
+    }
+    img{
+        width: 50px;
+    }
+} 
+@media (max-width: 830px){
+    div h1{
+        font-size: 2.5em;
+    }
+    .paginaComo{
+        width: 60vw;
+        height: 84vh;
+    }
+    p{
+        font-size: 1.2em;
+        
+    }
+    img{
+        width: 50px;
+    }
+}
+@media (max-width: 700px){
+    div h1{
+        font-size: 2.5em;
+    }
+    .paginaComo{
+        width: 60vw;
+        height: 84vh;
+    }
+    p{
+        font-size: 1em;
+        
+    }
+    img{
+        width: 50px;
+    }
+}
+@media (max-width: 600px){
+    div h1{
+        font-size: 2.5em;
+    }
+    .paginaComo{
+        width: 70vw;
+        height: 84vh;
+    }
+    p{
+        line-height: 25px;
+        font-size: 1em;
+    }
+    img{
+        width: 35px;
+    }
+}

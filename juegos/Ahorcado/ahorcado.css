@@ -1,0 +1,226 @@
+
+.info{
+    margin: 50px;
+}
+ h2{
+    color: #0f0;
+ }
+
+/*valoracion*/
+
+span{
+    color:white;
+}
+input[type="radio"] {
+    display: none;
+  } 
+  .clasificacion {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+    width: 70px;
+  }
+  
+  input[type="radio"]:checked ~ label {
+    color: orange;
+  }
+
+  button {
+    width: 150px; 
+    margin: 20px auto; 
+    padding: 10px;
+    font-size: 18px;
+    color: #0f0;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    border: 3px solid #0f0;
+    background: transparent;
+    position: relative;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: start;}
+
+
+    /*General*/
+      .back {
+        border: 4px solid white;
+        border-radius: 20px;
+        backdrop-filter: blur(8px);
+        justify-content: center;
+        align-content: center;
+      }
+    /*Nav*/
+      .nav {
+        display: flex;
+        flex-direction: row;
+        height: 150px;
+        width: 97%;
+        margin: 20px;
+        place-items: center;
+        justify-content: space-between;
+      }
+      .title_div{
+        display: flex;
+        margin-left: 50px;
+      }
+      .title {
+        color: #00FF41;
+        font-family: 'Miltown', sans-serif;
+        text-shadow: 0 0 2px #00FF41,0 0 8px #00FF41,0 0 8px #000000;
+        font-size: 70px;
+      }
+      .login{
+        display: flex;
+        height: 100%;
+        width: 200px;
+        border-radius: 20px;
+      }
+      img {
+  	   border-radius: 20px;
+      height:100%;
+      width:100%; 
+      }
+      .login img:hover {
+         opacity: 0.1;
+      }
+		#juego {
+			background-color: #efefef;
+			width: 850px;
+			border: 15px solid #444;
+			-webkit-border-radius: 15px/20px;
+			-moz-border-radius :  15px/20px;
+			height: 500px;
+			margin: 0px auto;
+			margin-top: 20px;
+			font-family: helvetica, arial;
+			font-size: 13px;
+		}
+
+		#datos {
+			width: 150px;
+			border-right: 1px solid #444;
+			float: left;
+			height: 310px;
+			padding: 20px;
+			margin-top: 10px;
+			font-size: 13px;
+		}
+
+		#resultado {
+			width: 550px;
+			float: left;
+			padding: 20px;
+			margin-top: 20px;
+			margin-left: 50px;
+			font-size: 13px;
+			font-family: helvetica, arial;
+		}
+
+		#resultado span {
+			text-transform: uppercase;
+		}
+
+		#resultado table td{
+			font-family: helvetica;
+			font-size: 13px;
+			padding:0px 10px;
+		}
+
+		#dibujo {
+			margin: auto;
+			margin-top: -20px;
+			margin-left: 80px;
+			width: 350px;
+			height: 200px;
+			border: 0px solid #444;
+			float: left;
+		}
+
+		#palo-vertical {
+			position: absolute;
+			border-right: 20px solid #345;
+			border-bottom: 2px solid #373;
+			margin: auto;
+			margin-top: 10px;
+			margin-left: 10px;
+			height: 200px;
+			width: 300px;
+		}
+
+		#cabeza {
+			position: absolute;
+			margin: auto;
+			margin-top: 20px;
+			margin-left: 200px;
+			width: 30px;
+			background-color: #000;
+			-webkit-border-radius: 30px;
+			-moz-border-radius: 30px;
+			border-color: 1px solid #333;
+			height: 30px;
+			display: none;
+		}
+
+		#cuerpo {
+			position: absolute;
+			margin: auto;
+			margin-top: 50px;
+			margin-left: 195px;
+			width: 40px;
+			background-color: #000;
+			-webkit-border-radius: 10px;
+			-moz-border-radius: 10px;
+			border-color: 1px solid #333;
+			height: 50px;
+			display: none;
+		}
+
+		#piernas {
+			position: absolute;
+			width: 5px;
+			margin: auto;
+			margin-top: 93px;
+			margin-left: 198px;
+			border-left: 15px solid #000;
+			border-right: 15px solid #000;
+			-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+			height: 30px;
+			display: none;
+		}
+
+		#brazos {
+			position: absolute;
+			margin: auto;
+			margin-top: 55px;
+			margin-left: 165px;
+			width: 100px;
+			border-top: 7px solid #000;
+			border-bottom: 7px solid #000;
+			height: 0px;
+			-webkit-border-radius: 10px;
+			-moz-border-radius: 10px;
+			display: none;
+		}
+
+		#cuerda {
+			position: absolute;
+			margin: auto;
+			margin-top: 47px;
+			margin-left: 190px;
+			width: 120px;
+			border-top: 2px dashed #e55;
+			border-bottom: 2px dotted #e55;
+			height: 0px;
+			-webkit-border-radius: 10px;
+			-moz-border-radius: 10px;
+			display: none;
+		}
+
+		#informacion {
+			padding: 10px 20px;
+		}
+
+        body{
+            color:#333;
+        }

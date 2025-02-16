@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es" manifest="damas.manifest">
+	<head>
+		<meta charset="UTF-8">
+		<title>Damas inglesas</title>
+		<link rel="stylesheet" href="estilo.css">
+		<script src="juego.js"></script>
+		<link rel="stylesheet" href="../../assets/css/fuentes.css">
+    <link rel="stylesheet" href="../../assets/css/nav.css">
+    <link rel="icon" type="image/png" href="../../assets/img/logo.png">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="../../index.html"><img src="../../assets/img/logo.png" alt="Logo"></a> 
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../../index.html">Inicio</a></li>
+                <li><a href="../../juegos.html" class="active">Juegos</a></li>
+                <li><a href="../../blog.html">Blog</a></li>
+                <li><a href="../../contacto.html">Contacto</a></li>
+                <li><a href="../..ca/index.html"><img src="../../assets/img/catala.png" alt="Bandera"></a> </li>
+            </ul>
+        </nav>
+    </header>
+	<section class="inicio">
+		<h1>Damas inglesas</h1>
+		<p id="movimientos">Movimientos: <span id="count">0</span></p>
+		<p id="esTurno">Empiezan Blancas: </p>
+		<canvas id="lienzo" width="600" height="300"></canvas>
+		<br><br>
+		<input type="button" id="resetButton" value="Nueva partida">
+		<input type="button" id="loadButton" value="Cargar partida">
+		<input type="button" id="saveButton" value="Guardar partida">
+		<br>
+		<hr>
+		<br>
+		<label for="empateButton">Pulsar para finalizar el juego de mutuo acuerdo* : </label>
+		<input type="button" id="empateButton" value="Tablas">
+		<p> *: Necesita la confirmaci&oacute;n del oponente. </p>
+		<div id="moveBlancas"><h3>Blancas</h3></div>
+		<div id="moveNegras"><h3>Verdes</h3></div>
+		<script>
+			iniciarJuego(document.getElementById('lienzo'), document.getElementById('count'));
+		</script>
+		</section>	
+		<footer>
+			<p>&copy; 2025 VirtualPixels. Todos los derechos reservados.</p>
+		</footer>	
+	</body>
+</html>

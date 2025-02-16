@@ -1,0 +1,67 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Pixelify Sans', sans-serif;
+    box-sizing: border-box;
+    background-color: black;
+    display: flex;
+    width: 100vw;
+    height: 98vh;
+    justify-content: center;
+    place-items: center;
+}
+.paginaOver{
+    width: 35vw;
+    height: 84vh;
+    border: 7px solid white;
+    border-radius: 10%;
+    display: flex;
+    place-items: center;
+    flex-direction: column;
+}
+ h1{
+    font-size: 4em;
+    margin-top: 30px;
+}
+.puntos{
+    display: inline;
+}
+p{
+    font-size: 2em;
+    margin-top: 20px;
+}
+.g, .e2{
+    color: #E7484F
+}
+.a, .r{
+    color: #F68B1D
+}
+.m{
+    color: #FCED00
+}
+.e{
+    color: #009E4F
+}
+.o{
+    color: #00AAC3
+}
+.v{
+    color:  #732982
+}
+.vacio{
+    color: none;
+}
+h2{
+    font-size: 2.5em;
+    margin-top: 50px;
+    background: -webkit-linear-gradient(left, #c23636, #192a56, #00d2d3, yellow, #6d2a4f, #2e86de, #4cd137, #e84118);
+    -webkit-background-clip: text;
+    animation: light linear 4s infinite alternate;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;   
+    animation: color 3s linear infinite; 
+    background-size: 200%;  
+    -webkit-transform: translate3d(0,0,0);
+    -webkit-backface-visibility: hidden;
+}

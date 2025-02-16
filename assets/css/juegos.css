@@ -1,16 +1,24 @@
-td >img{
-    width: 80%;
-    height: 350px;
-    margin-left: 10%;
+
+table{
+  justify-self: center;
+  width: 90%;
 }
 td{
     width: 30%;
     height: 500px;
 }
-table{
-    justify-self: center;
-    width: 90%;
+td>a{
+  width: 100%;
+  text-decoration: none;
+
 }
+td > a > img{
+  width: 80%;
+  height: 350px;
+  margin-left: 10%; 
+}
+
+
 /*valoracion*/
 span{
     color:white;
@@ -68,7 +76,7 @@ button:hover {
     text-align: center;
   }
 
-  td>img:hover{
+  td>a>img:hover{
     border: 3px #0f0 solid;
     width: 87%;
     height: 360px;
