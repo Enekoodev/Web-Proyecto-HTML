@@ -1,45 +1,12 @@
-
+.inicio{
+	margin-bottom: 50px;
+}
 .info{
     margin: 50px;
 }
  h2{
     color: #0f0;
  }
-
-/*valoracion*/
-
-span{
-    color:white;
-}
-input[type="radio"] {
-    display: none;
-  } 
-  .clasificacion {
-    direction: rtl;
-    unicode-bidi: bidi-override;
-    width: 70px;
-  }
-  
-  input[type="radio"]:checked ~ label {
-    color: orange;
-  }
-
-  button {
-    width: 150px; 
-    margin: 20px auto; 
-    padding: 10px;
-    font-size: 18px;
-    color: #0f0;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-weight: bold;
-    border: 3px solid #0f0;
-    background: transparent;
-    position: relative;
-    border-radius: 5px;
-    cursor: pointer;
-    text-align: start;}
-
 
     /*General*/
       .back {

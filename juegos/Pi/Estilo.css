@@ -6,10 +6,11 @@
 
 .contenedor{
 	background-color:#6167A5;
-	width: 98%;
-
+	width: 95%;
+	margin-bottom: 100px;
 	display:flex;
 	flex-direction:column;
+	justify-self: center;
 }
 .selector{
 	display:flex;

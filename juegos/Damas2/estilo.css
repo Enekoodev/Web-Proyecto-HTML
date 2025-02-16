@@ -10,20 +10,20 @@ hr {
 
 #moveBlancas {
 	position:absolute;
-	left:575px;
+	left:975px;
 	top: 300px;
 	width:200px;
 }
 
 #moveNegras {
 	position:absolute;
-	left:774px;
+	left:1174px;
 	top: 300px;
 	width:200px;
 }
-section{
-	margin-left: 75px;
-}
+/* section{
+	margin-left: 475px;
+} */
 script{
 	background-color: white;
 }

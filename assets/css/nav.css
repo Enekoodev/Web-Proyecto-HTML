@@ -121,3 +121,31 @@ footer p {
       font-size: 14px; 
   }
 }
+
+/*Footer*/
+.infoFooter{
+  display: flex;
+  flex-direction: row;
+  border-bottom: #0f0 1px solid;
+  gap: 80px;
+}
+.infoFooter>div>img{
+width: 200px;
+margin-left: 100px;
+}
+.infoFooter{
+  text-align: start;
+}
+.infoFooter>div>a{
+  text-decoration: none;
+  color:white;
+}
+footer p {
+  font-size: 14px;
+  color: white;
+  margin-bottom: 3%;
+}
+.infoFooter>div>h4{
+  color:#0f0;
+  text-decoration: underline;
+}
