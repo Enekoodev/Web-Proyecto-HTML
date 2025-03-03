@@ -1,0 +1,4 @@
+[[plugins]]
+package = "netlify-plugin-check-output-for-puppy-references"
+  [plugins.inputs]
+  breeds = ["pomeranian", "chihuahua", "bulldog"]
