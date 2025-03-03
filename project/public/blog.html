@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VirtualPixels - Blog</title>
+    <link rel="stylesheet" href="assets/css/fuentes.css">
+    <link rel="stylesheet" href="assets/css/nav.css">
+    <link rel="stylesheet" href="assets/css/blog.css">
+    <link rel="stylesheet" href="assets/css/calendario.css">
+    <link rel="icon" type="image/png" href="assets/img/logo.png">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="assets/img/logo.png" alt="Logo"></a> 
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="juegos.html">Juegos</a></li>
+                <li><a href="blog.html" class="active">Blog</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="ca/index.html"><img src="assets/img/catala.png" alt="Bandera"></a> </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="calendario" id="proximosEventos">
+        <h2>📅 Próximos eventos</h2>
+        <p>Aqui puedes ver los eventos que organizamos y lanzamientos de proximos juegos</p>
+        <table>
+            <caption>Febrero 2025</caption>
+            <tr>
+                <th>Lunes</th><th>Martes</th><th>Miércoles</th><th>Jueves</th><th>Viernes</th><th>Sábado</th><th>Domingo</th>
+            </tr>
+            <tr>
+                <td></td><td></td><td></td><td></td><td></td><td>1</td><td>2</td>
+            </tr>
+            <tr>
+                <td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td>
+            </tr>
+            <tr>
+                <td>10</td><td>11</td><td>12</td><td>13</td><td>14</td>
+                <td class="evento">15
+                    <div class="evento-detalle">
+                        <strong>🎮 Evento Especial</strong>
+                        <p>Presentación de nuevo juego</p>
+                    </div>
+                </td>
+                <td>16</td>
+            </tr>
+            <tr>
+                <td>17</td><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td>
+            </tr>
+            <tr>
+                <td>24</td><td>25</td><td>26</td><td>27</td><td>28</td><td></td><td></td>
+            </tr>
+        </table>
+    </section>
+
+    <section class="entradas" id="ultimasEntradasBlog">
+        <h2>📰 Últimas entradas del blog</h2>
+    
+        <ol>
+            <li>
+                <div class="entrada">
+                    <div class="fecha-calendario">1</div>
+                    <img src="assets/img/videojuegos.jpg" alt="Los mejores videojuegos del año">
+                    <div class="entrada-content">
+                        <h3>🎮 Los mejores videojuegos del año</h3>
+                        <p>Descubre los títulos más impresionantes que marcaron tendencia en 2025. Desde RPGs épicos hasta shooters adictivos, aquí están los juegos que no te puedes perder.</p>
+                        <a href="https://www.xataka.com/listas/mejores-videojuegos-2025-interesantes-que-estan-venir" target="_blank" class="boton">Leer más</a>
+                    </div>
+                </div>
+            </li>
+    
+            <li>
+                <div class="entrada">
+                    <div class="fecha-calendario">2</div>
+                    <img src="assets/img/eSports.jpg" alt="Consejos para mejorar en eSports">
+                    <div class="entrada-content">
+                        <h3>🔥 Consejos para mejorar en los eSports</h3>
+                        <p>Si quieres destacar en el mundo competitivo, estos consejos te ayudarán a mejorar tus reflejos, estrategia y mentalidad para subir de nivel.</p>
+                        <a href="https://www.urbanfisio.com/ejercicios-mejorar-esports/" target="_blank" class="boton">Leer más</a>
+                    </div>
+                </div>
+            </li>
+        </ol>
+    </section>
+    
+
+    <section class="newsletter" id="Suscribirse">
+        <h2>📩 Suscríbete a nuestra Newsletter</h2>
+        <p>¡Recibe las últimas noticias y novedades en tu correo electrónico!</p>
+        <form action="">
+            <label for="email">Correo</label>
+            <input type="email" name="email" id="email" placeholder="Introduce tu email" required>
+            <button type="submit" class="boton">Suscribirse</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="infoFooter">
+            <div><img src="assets/img/logo.png" alt="logo"></div>
+            <div class="virtualpixelsFooter">
+                <h4>VirtualPixels</h4>
+                <p>Descubre las maravillas de nuestros mágicos juegos.</p>
+                <a href="juegos.html">Nuestros juegos</a>
+            </div>
+            <div class="infoEnlaceInternoFooter">
+                <h4>Sobre nosotros:</h4>
+                <a href="blog.html#proximosEventos">Proximos Eventos</a><br>
+                <a href="blog.html#proximasEntradasBlog">Proximas Entradas de Blog</a><br>
+                <a href="blog.html#suscribete">Suscríbete</a>
+            </div>
+            <div class="infoContactosFooter">
+                <h4>Contacta con nosotros:</h4>
+                <p><strong>Email:</strong> contacto@virtualpixels.com</p>
+                <p><strong>Teléfono:</strong> +34 123 456 789</p>
+                <p><strong>Dirección:</strong> Calle Pixel 404, Ciudad Virtual</p>
+            </div>
+        </div>
+        <p>&copy; 2025 VirtualPixels. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

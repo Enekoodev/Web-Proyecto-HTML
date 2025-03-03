@@ -1,0 +1,233 @@
+.calendario {
+    padding: 50px;
+    padding-top: 30vh;
+    background: #000;
+    border-bottom: 3px solid #0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.calendario table {
+    width: 90%;
+    max-width: 800px;
+    border-collapse: collapse;
+    background: rgba(15, 255, 15, 0.15);
+    border: 3px solid #0f0;
+}
+
+.calendario caption {
+    font-size: 18px;
+    background-color: rgba(0, 255, 0, 0.288);
+    color: whitesmoke;
+    padding: 10px;
+    border-top: 3px solid #0f0;
+    border-left: 3px solid #0f0;
+    border-right: 3px solid #0f0;
+}
+
+.calendario th, .calendario td {
+    border: 2px solid #0f0;
+    padding: 15px;
+    text-align: center;
+    color: #0f0;
+    font-size: 18px;
+}
+
+.calendario th {
+    background: #111;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.calendario td {
+    background: rgba(15, 255, 15, 0.05);
+}
+
+.calendario td:hover {
+    transform: scale(1.1);
+    background: rgba(15, 255, 15, 0.2);
+    box-shadow: 0 0 10px #0f0;
+}
+
+.evento {
+    position: relative;
+    background: rgba(15, 255, 15, 0.3);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.evento:hover {
+    background: #0f0;
+    color: #111;
+}
+
+.evento-detalle {
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #0f0;
+    color: #111;
+    padding: 10px;
+    border-radius: 5px;
+    white-space: nowrap;
+    font-size: 12px;
+    box-shadow: 0 0 10px #0f0;
+}
+
+.evento:hover .evento-detalle {
+    display: block;
+}
+
+
+.entradas {
+    padding: 50px;
+    background: #222;
+    text-align: center;
+    border-bottom: 3px solid #0f0;
+}
+
+.entradas ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;  
+    position: relative;
+}
+
+.fecha-calendario {
+    position: absolute;
+    top: 10px;  
+    left: 10px; 
+    background-color: #0f0;
+    color: #111;
+    font-size: 24px;
+    font-weight: bold;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 3px solid #0f0;
+}
+
+.entrada {
+    display: flex;
+    align-items: center;
+    background: rgba(15, 255, 15, 0.1);
+    border: 3px solid #0f0;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: left;
+    position: relative;
+}
+
+.entrada img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 3px solid #0f0;
+    margin-right: 20px;
+}
+
+.entrada-content {
+    flex: 1;
+}
+
+.entrada h3 {
+    color: #0f0;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.entrada p {
+    color: #ddd;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.boton {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 12px;
+    color: #0f0;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    border: 3px solid #0f0;
+    background: transparent;
+    position: relative;
+    border-radius: 5px;
+}
+
+.boton:hover {
+    color: #111;
+    background: #0f0;
+    box-shadow: 0 0 5px #0f0, 0 0 5px #0f0, 0 0 5px #0f0;
+}
+
+
+.newsletter {
+    background: linear-gradient(to right, #0f0, rgb(9, 133, 9));
+    color: #fff;
+    text-align: center;
+    padding: 40px 20px;
+    border-radius: 10px;
+    margin: 40px auto;
+    max-width: 600px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.newsletter h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.newsletter p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.newsletter form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.newsletter input {
+    width: 80%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.newsletter input:focus {
+    outline: none;
+    box-shadow: 0 0 8px rgba(60, 112, 5, 0.6);
+}
+
+.newsletter .boton {
+    background: #70f647;
+    color: #333;
+    font-size: 18px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.newsletter .boton:hover {
+    background: #479b2e;
+    transform: scale(1.05);
+}

@@ -1,0 +1,111 @@
+
+*{
+	font-family:monospace;
+	font-family: 'Bungee', cursive;
+}
+
+.contenedor{
+	background-color:#6167A5;
+	width: 95%;
+	margin-bottom: 100px;
+	display:flex;
+	flex-direction:column;
+	justify-self: center;
+}
+.selector{
+	display:flex;
+	flex-direction:row;
+	justify-content:space-around;
+}
+.opcion{
+	display:flex;
+	flex-direction:column;
+	text-align:center;
+}
+img.elige{
+	border-radius:50%;
+	border:4px white solid;
+	opacity:0.6;
+	transition:0.4s;
+	filter:grayscale(70%);
+	width:200px;
+}
+img.elige:hover{
+	opacity:1;
+	box-shadow:2px 4px 4px #333333;
+	filter:grayscale(0%);
+}
+.contenido{
+	margin-top:50px;
+	display:flex;
+	flex-direction:row;
+	justify-content:space-around;
+	flex-grow:4;
+	flex-wrap:wrap;
+}
+.jugador > span> img, .maquina > span> img{
+	border:3px white solid;
+	border-radius:50%;
+	width:200px;
+}
+.jugador, .maquina{
+	width:40%;
+	text-align:center;
+	font-size:2em;
+	border:1px white solid;
+	box-sizing:border-box;
+	background:#BFC1DA;
+	border-radius:10px;
+}
+.jugador > span, .maquina > span{
+	width:100%;
+}
+#resultado{
+	width:100%;
+	text-align:center;
+	font-size:3em;
+	color:white;
+	text-shadow:2px 2px 2px black;
+}
+
+
+
+@media screen and (max-width:1200px)
+{
+	img.elige{
+		width:150px;
+		height:150px;
+	}
+}
+
+@media screen and (max-width:1000px)
+{
+	header{
+		font-size:1em;
+	}
+	img.elige{
+		width:100px;
+		height:100px;
+	}
+}
+
+@media screen and (max-width:700px)
+{
+.txt{
+	font-size:0.8em;
+}
+	.jugador > span> img, .maquina > span> img{
+	width:100px;
+	height:100px;
+	}
+	.jugador, .maquina{
+		font-size:1em;
+	}
+	header{
+		font-size:0.6em;
+	}
+	img.elige{
+		width:50px;
+		height:50px;
+	}
+}

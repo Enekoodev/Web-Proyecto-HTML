@@ -1,0 +1,29 @@
+h3 {
+	text-decoration:underline;
+}
+
+hr {
+	position:absolute;
+	left:0px;
+	width:440px;
+}
+
+#moveBlancas {
+	position:absolute;
+	left:975px;
+	top: 300px;
+	width:200px;
+}
+
+#moveNegras {
+	position:absolute;
+	left:1174px;
+	top: 300px;
+	width:200px;
+}
+/* section{
+	margin-left: 475px;
+} */
+script{
+	background-color: white;
+}

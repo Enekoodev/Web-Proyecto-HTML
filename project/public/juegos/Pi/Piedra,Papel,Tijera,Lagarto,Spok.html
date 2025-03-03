@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>VirtualPixel - Piedra, Papel...</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
+		<link type="text/css" rel="stylesheet" href="./Estilo.css">
+		<link rel="stylesheet" href="../../assets/css/fuentes.css">
+    <link rel="stylesheet" href="../../assets/css/nav.css">
+    <link rel="icon" type="image/png" href="../../assets/img/logo.png">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="../../index.html"><img src="../../assets/img/logo.png" alt="Logo"></a> 
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../../index.html">Inicio</a></li>
+                <li><a href="../../juegos.html" class="active">Juegos</a></li>
+                <li><a href="../../blog.html">Blog</a></li>
+                <li><a href="../../contacto.html">Contacto</a></li>
+                <li><a href="../..ca/index.html"><img src="../../assets/img/catala.png" alt="Bandera"></a> </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="inicio">
+	
+		<div class="contenedor">
+			<h1><a href="">Piedra, papel, tijeras, lagarto, spock</a></h1>
+			<div class="selector">
+				<div class="opcion">
+                    <img title="Piedra" class="elige" onclick="opcion(0);" src="./piedra.png">
+                    <div class="txt">PIEDRA</div>
+                </div>
+				<div class="opcion">
+                    <img title="Papel" class="elige" onclick="opcion(1);" src="./papel.png">
+                    <div class="txt">PAPEL</div>
+                </div>
+				<div class="opcion">
+                    <img title="Tijeras" class="elige" onclick="opcion(2);" src="./tijeras.png">
+                    <div class="txt">TIJERAS</div>
+                </div>
+				<div class="opcion">
+                    <img title="Lagarto" class="elige" onclick="opcion(3);" src="./lagarto.png">
+                    <div class="txt">LAGARTO</div>
+                </div>
+				<div class="opcion">
+                    <img title="Spock" class="elige" onclick="opcion(4);" src="./spock.png">
+                    <div class="txt">SPOCK</div>
+                </div>
+			</div>
+			<div class="contenido">
+				<div class="jugador">JUGADOR (<span id="puntosJ">0</span>)<br/>
+					<span id="jugador"></span>
+				</div>
+				<div class="maquina">CPU (<span id="puntosM">0</span>)<br/>
+					<span id="maquina"></span>
+				</div>
+				<div id="resultado"></div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="./Juego Piedra Papel Tijera.js"></script>
+	<footer>
+        <div class="infoFooter">
+            <div><img src="../../assets/img/logo.png" alt="logo"></div>
+            <div class="virtualpixelsFooter">
+                <h4>VirtualPixels</h4>
+                <p>Descubre las maravillas de nuestros mágicos juegos.</p>
+                <a href="juegos.html">Nuestros juegos</a>
+            </div>
+            <div class="infoEnlaceInternoFooter">
+                <h4>Sobre nosotros:</h4>
+                <a href="../../blog.html#proximosEventos">Proximos Eventos</a><br>
+                <a href="../../blog.html#proximasEntradasBlog">Proximas Entradas de Blog</a><br>
+                <a href="../../blog.html#suscribete">Suscríbete</a>
+            </div>
+            <div class="infoContactosFooter">
+                <h4>Contacta con nosotros:</h4>
+                <p><strong>Email:</strong> contacto@virtualpixels.com</p>
+                <p><strong>Teléfono:</strong> +34 123 456 789</p>
+                <p><strong>Dirección:</strong> Calle Pixel 404, Ciudad Virtual</p>
+            </div>
+        </div>
+        <p>&copy; 2025 VirtualPixels. Todos los derechos reservados.</p>
+    </footer> 
+</html>

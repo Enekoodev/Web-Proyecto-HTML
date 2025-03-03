@@ -1,0 +1,216 @@
+<html>
+	<head>
+	<title> .:: Juego del ahorcado ::. </title>
+	<link rel="stylesheet" href="../../assets/css/fuentes.css">
+    <link rel="stylesheet" href="../../assets/css/nav.css">
+    <link rel="stylesheet" href="ahorcado.css">
+    <link rel="icon" type="image/png" href="../../assets/img/logo.png">
+</head>
+<body onload="comenzarJuego()">
+    <header>
+        <div class="logo">
+            <a href="../../index.html"><img src="../../assets/img/logo.png" alt="Logo"></a> 
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../../index.html">Inicio</a></li>
+                <li><a href="../../juegos.html" class="active">Juegos</a></li>
+                <li><a href="../../blog.html">Blog</a></li>
+                <li><a href="../../contacto.html">Contacto</a></li>
+                <li><a href="../..ca/index.html"><img src="../../assets/img/catala.png" alt="Bandera"></a> </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="inicio">
+	<script language="javascript">
+		var juegoPalabras=new Array("tortilla", "bocadillo", "paella", "patata", "beicon", "cebolla", "espacio", "coche", "pantalla", "hierro", "mercurio", "clan", "grupo", "vampiro", "nasa", "momia", "escrito", "cama", "auto", "vaso", "plato", "lampara", "tarjeta", "codigo", "google", "medicina", "platano", "murcielago", "arbol", "supercalifragilisticoespialidoso", "sangre", "comida", "cocina", "asalto", "aceite", "chicle", "goma", "lapiz", "boli", "estuche", "perro", "gato", "raton", "policia", "recepcionista", "camarero", "velocidad", "enfermedad", "telefono", "jersey", "sudadera", "pantalon", "ojo", "boca", "diente", "uña", "horchata", "colacao");
+		var letrasUtilizadas="";
+		var MAXINTENTOS=4;
+		var intentos=0;
+		var palabraOculta="";
+		var palabraActual;
+		var letra="";
+
+		function comenzarJuego(){
+			var index=Math.floor(Math.random()*juegoPalabras.length);
+			palabraOculta=juegoPalabras[index].toUpperCase();
+			palabraActual=new Array(palabraOculta.length);
+			letrasUtilizadas="";
+			intentos=0;
+			document.getElementById('cabeza').style.display='none';
+			document.getElementById('cuerpo').style.display='none';
+			document.getElementById('brazos').style.display='none';
+			document.getElementById('piernas').style.display='none';
+			document.getElementById('cuerda').style.display='none';
+			document.forms[0].elements['letra'].focus();
+				for(var i=0; i<palabraActual.length; i++){
+					palabraActual[i]=0;
+				}
+			mostrarInformacion();
+		}
+
+		function validarPalabra(letra){
+			var encontroPalabra=false;
+			var coincidencias=0;
+			letrasUtilizadas+=letra.toUpperCase() + " ";
+				for(var i=0; i<palabraActual.length; i++){
+					if(letra.charAt(0).toUpperCase()==palabraOculta.charAt(i)){
+						palabraActual[i]=1;
+						encontroPalabra=true;
+					}
+				}
+				if(!encontroPalabra){
+					intentos++;
+				}
+				if(intentos==1){
+					document.getElementById('cabeza').style.display='block';
+				}
+				if(intentos==2){
+					document.getElementById('cuerpo').style.display='block';
+				}
+				if(intentos==3){
+					document.getElementById('brazos').style.display='block';
+					document.getElementById('piernas').style.display='block';
+				}
+				if(intentos==4){
+					document.getElementById('cuerda').style.display='block';
+				}
+				mostrarInformacion();
+				for(var i=0; i<palabraActual.length; i++){
+					if(palabraActual[i]==1){
+						coincidencias++;
+					}
+				}
+				if(coincidencias==palabraOculta.length){
+					ganarJuego();
+				}
+				if(intentos==MAXINTENTOS){
+					palabraActual=palabraOculta;
+					mostrarInformacion();
+					gameOver();
+				}
+				document.forms[0].elements['letra'].focus();
+				document.forms[0].elements['letra'].value="";
+		}
+
+		function gameOver(){
+			alert("Game Over");
+			if(confirm("Deseas a jugar otra vez?")){
+				comenzarJuego();
+			} 
+			else{
+				alert("Gracias por jugar");
+			}
+		}
+
+		function ganarJuego(){
+			alert("Felicidades Has Ganado!");
+			if (confirm("Deseas a jugar otra vez ?")){
+				comenzarJuego();
+			} 
+			else{
+				alert("Gracias por jugar =)");
+			}
+		}
+
+		function mostrarInformacion(){
+			var palabraVisible="";
+			for(var i=0; i<palabraActual.length; i++){
+				if(palabraActual[i]!=0){
+					palabraVisible += "<span> " + palabraOculta.charAt(i)+ " </span>";
+				} 
+				else{
+					palabraVisible += "<span> __ </span>";
+				}
+			}
+			var informacionJuego = "<div id='informacionJuego'> ";
+			informacionJuego += "<table>";
+			informacionJuego += "   <tr>";
+			informacionJuego += "      <td> Max. Numero de Intentos </td>";
+			informacionJuego += "      <td><strong>" + MAXINTENTOS + "</strong></td>";
+			informacionJuego += "   </tr>";
+			informacionJuego += "   <tr>";
+			informacionJuego += "      <td> Intentos </td>";
+			informacionJuego += "      <td><strong>" + intentos + "</strong></td>";
+			informacionJuego += "   </tr>";
+			informacionJuego += "   <tr>";
+			informacionJuego += "      <td> Palabra Visible </td>";
+			informacionJuego += "      <td>" + palabraVisible + "</td>";
+			informacionJuego += "   </tr>";
+			informacionJuego += "   <tr>";
+			informacionJuego += "      <td> Letras Utilizadas </td>";
+			informacionJuego += "      <td><span>" + letrasUtilizadas+ "</span></td>";
+			informacionJuego += "   </tr>";
+			informacionJuego += "</table>";
+			informacionJuego += "</div>";
+			document.getElementById('resultado').innerHTML=informacionJuego;
+		}
+
+		function recorrerPalabra(){
+			for(var i=0; i< palabra.length; i++){
+				//alert(palabra.charAt(i));
+				//codigo += "<br/>" + palabra.charAt(i);
+				document.getElementById('resultado').innerHTML=palabra.charAt(i);
+			}
+			//document.getElementById('resultado').innerHTML=codigo; 		   
+		}
+	</script>
+
+   <script src="../../js/menu.js"></script>
+		<div id="juego">
+			<div id="informacion">
+				<h2>Ahorcado</h2>
+			</div>
+			<div id="datos">
+				<form>
+					<table>
+						<tr>
+							<td>Letra</td>
+							<td><input type="text" name="letra" maxlength="1" size="3"
+								style="text-transform: uppercase"/></td>
+						</tr>
+						<tr>
+							<td colspan="2">
+							<input type="button" name="enviar" value="validar"
+								onclick="validarPalabra(form.letra.value)"/>
+							</td>
+						</tr>
+					</table>
+				</form>
+			</div>
+			<div id="resultado"></div>
+			<div id='dibujo'>
+				<div id='cabeza'>&nbsp;</div>
+				<div id='cuerpo'>&nbsp;</div>
+				<div id='piernas'>&nbsp;</div>
+				<div id='brazos'>&nbsp;</div>
+				<div id='cuerda'>&nbsp;</div>
+				<div id='palo-vertical'>&nbsp;</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="infoFooter">
+            <div><img src="../../assets/img/logo.png" alt="logo"></div>
+            <div class="virtualpixelsFooter">
+                <h4>VirtualPixels</h4>
+                <p>Descubre las maravillas de nuestros mágicos juegos.</p>
+                <a href="juegos.html">Nuestros juegos</a>
+            </div>
+            <div class="infoEnlaceInternoFooter">
+                <h4>Sobre nosotros:</h4>
+                <a href="../../blog.html#proximosEventos">Proximos Eventos</a><br>
+                <a href="../../blog.html#proximasEntradasBlog">Proximas Entradas de Blog</a><br>
+                <a href="../../blog.html#suscribete">Suscríbete</a>
+            </div>
+            <div class="infoContactosFooter">
+                <h4>Contacta con nosotros:</h4>
+                <p><strong>Email:</strong> contacto@virtualpixels.com</p>
+                <p><strong>Teléfono:</strong> +34 123 456 789</p>
+                <p><strong>Dirección:</strong> Calle Pixel 404, Ciudad Virtual</p>
+            </div>
+        </div>
+        <p>&copy; 2025 VirtualPixels. Todos los derechos reservados.</p>
+    </footer>
+	</body>
+</html>

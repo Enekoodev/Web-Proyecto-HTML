@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atari</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../assets/css/fuentes.css">
+    <link rel="stylesheet" href="../../assets/css/nav.css">
+    <link rel="icon" type="image/png" href="../../assets/img/logo.png">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="../../index.html"><img src="../../assets/img/logo.png" alt="Logo"></a> 
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../../index.html">Inicio</a></li>
+                <li><a href="../../juegos.html" class="active">Juegos</a></li>
+                <li><a href="../../blog.html">Blog</a></li>
+                <li><a href="../../contacto.html">Contacto</a></li>
+                <li><a href="../..ca/index.html"><img src="../../assets/img/catala.png" alt="Bandera"></a> </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="inicio">
+  <audio src="miaudio.mp3" autoplay></audio>
+    <div id="game">
+        <div id="sky"></div>
+        <div id="mountains">
+          <div class="mountain"></div>
+          <div class="mountain"></div>
+          <div class="mountain"></div>
+          <div class="mountain"></div>
+        </div>
+        <div id="terrain"></div>
+        <div id="fog" class="hidden"></div>
+        <canvas id="road"></canvas>
+        <div id="cars"></div>
+        <div id="car" class="player car"></div>
+        <div id="ui">
+          <div id="panel">
+            <div id="km"><a></a><a>0</a><a>0</a><a>0</a><a>0</a><a>0</a></div>
+            <div id="lap"><a>1</a></div>
+            <div id="position"><a>P</a><a>2</a><a>0</a><a>0</a></div>
+          </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <p>
+        <button id="left">◀️</button>
+        <button id="up">⏏️</button>
+        <button id="right">▶️</button>
+    </p>
+    <p><button id="click">Start!</button></p>
+    <p id="text">Left/Right Arrows or A/D to steer and <br> Up Arrow, W or Space to accelerate</p>
+    <script src="game.js"></script>
+  </section>
+    <footer>
+      <div class="infoFooter">
+        <div><img src="../../assets/img/logo.png" alt="logo"></div>
+        <div class="virtualpixelsFooter">
+            <h4>VirtualPixels</h4>
+            <p>Descubre las maravillas de nuestros mágicos juegos.</p>
+            <a href="juegos.html">Nuestros juegos</a>
+        </div>
+        <div class="infoEnlaceInternoFooter">
+            <h4>Sobre nosotros:</h4>
+            <a href="../../blog.html#proximosEventos">Proximos Eventos</a><br>
+            <a href="../../blog.html#proximasEntradasBlog">Proximas Entradas de Blog</a><br>
+            <a href="../../blog.html#suscribete">Suscríbete</a>
+        </div>
+        <div class="infoContactosFooter">
+            <h4>Contacta con nosotros:</h4>
+            <p><strong>Email:</strong> contacto@virtualpixels.com</p>
+            <p><strong>Teléfono:</strong> +34 123 456 789</p>
+            <p><strong>Dirección:</strong> Calle Pixel 404, Ciudad Virtual</p>
+        </div>
+    </div>
+      <p>&copy; 2025 VirtualPixels. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
